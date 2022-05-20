@@ -1,0 +1,113 @@
+header {
+
+    background-color: var(--main-title-color);
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+    & .container {
+            display: flex;
+            align-items: center;
+        }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-menu {
+    display: flex;
+    margin-left: 93px;
+}
+
+.navigation-menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-menu__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+        padding-bottom: 32px;
+    font-weight: 500;
+    font-size: var(--main-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-color);
+    transition: color 250ms var(--animation);
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+&::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transform: scale(0);
+    transition: transform 250ms var(--animation);
+}
+
+&:hover::after {
+    transform: scale(1);
+}
+}
+
+.navigation-menu .navigation-menu__link.current {
+    position: relative;
+    color: var(--accent-color);
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        transform: scale(1);
+    
+    }
+}
+
+
+.contacts-list {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+}
+
+// .header-mail-link {
+//     display: flex;
+// }
+
+.contacts-list__item:first-child {
+    margin-right: 30px;
+}
+
+.contacts-list__link {
+    display: flex;
+    font-weight: 500;
+    font-size: var(--main-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contacts-color);
+    transition: color 250ms var(--animation);
+    &:hover, &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contacts-list__mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    align-self: center;
+}
+
+.contacts-list__phone-icon {
+    @extend .contacts-list__mail-icon;
+}
+
