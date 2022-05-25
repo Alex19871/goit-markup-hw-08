@@ -19,7 +19,7 @@
 <body>
     <header class="header">
             <div class="container header__container">
-                <a href="" class="logo"><span class="logo-part">Web</span>Studio</a>
+                <a href="" class="logo">Web<span class="logo-part">Studio</span></a>
         <button class="header-button" data-nav-open>
             <svg class="header-button__icon" width="24" height="16">
                 <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
@@ -73,12 +73,12 @@
     
     </header>
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
 
         <section class="feature">
             <div class="container">
@@ -129,7 +129,14 @@
             <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
               <li class="team__item">
-        <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270" class="team__icon">
+        <!-- <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270" class="team__icon"> -->
+        <picture>
+            <source srcset="./images/team/igor-desk.jpg 1x, ./images/team/igor-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/team/igor-tab.jpg 1x, ./images/team/igor-tab@2x.jpg 2x" media="(min-width: 768px)" />
+            <img srcset="./images/team/igor-mob.jpg 1x, ./images/team/igor-mob@2x.jpg 2x" alt="Игорь Демьяненко" class="img"
+                src="./images/team/igor-mob.jpg" />
+        
+        </picture>
         <div class="about-team-item">
         <h3 class="about-team-item__title">Игорь Демьяненко</h3>
         <p class="about-team-item__text">Product Designer</p></div>
@@ -157,7 +164,12 @@
     </ul>    
     </li>
               <li class="team__item">
-        <img src="./images/img1.jpg" alt="Ольга Репина" width="270" class="team-icon">
+        <picture>
+            <source srcset="./images/team/olga-desk.jpg 1x, ./images/team/olga-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/team/olga-tab.jpg 1x, ./images/team/olga-tab@2x.jpg 2x" media="(min-width: 768px)" />
+            <img srcset="./images/team/olga-mob.jpg 1x, ./images/team/olga-mob@2x.jpg 2x" alt="Ольга Репина" class="img"
+                src="./images/team/olga-mob.jpg" />
+        </picture>
         <div class="about-team-item">
         <h3 class="about-team-item__title">Ольга Репина</h3>
         <p class="about-team-item__text">Frontend Developer</p></div>
@@ -185,7 +197,13 @@
     </ul>
     </li>
               <li class="team__item">
-        <img src="./images/img2.jpg" alt="Николай Тарасов" width="270" class="team-icon">
+        <picture>
+            <source srcset="./images/team/nik-desk.jpg 1x, ./images/team/nik-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/team/nik-tab.jpg 1x, ./images/team/nik-tab@2x.jpg 2x" media="(min-width: 768px)" />
+            <img srcset="./images/team/nik-mob.jpg 1x, ./images/team/nik-mob@2x.jpg 2x" alt="Николай Тарасов" class="img"
+                src="./images/team/nik-mob.jpg" />
+        </picture>
+       
         <div class="about-team-item">
         <h3 class="about-team-item__title">Николай Тарасов</h3>
         <p class="about-team-item__text">Marketing</p></div>
@@ -213,7 +231,13 @@
     </ul>
     </li>
               <li class="team__item">
-        <img src="./images/img3.jpg" alt="Михаил Ермаков" width="270" class="team-icon">
+        <picture>
+            <source srcset="./images/team/mike-desk.jpg 1x, ./images/team/mike-desk@2x.jpg 2x" media="(min-width: 1200px)" />
+            <source srcset="./images/team/mike-tab.jpg 1x, ./images/team/mike-tab@2x.jpg 2x" media="(min-width: 768px)" />
+            <img srcset="./images/team/mike-mob.jpg 1x, ./images/team/mike-mob@2x.jpg 2x" alt="Михаил Ермаков" class="img"
+                src="./images/team/mike-mob.jpg" />
+        </picture>
+        
         <div class="about-team-item">
         <h3 class="about-team-item__title">Михаил Ермаков</h3>
         <p class="about-team-item__text">UI Designer</p></div>
@@ -328,7 +352,7 @@
       
         <div class="container">
             <div class="footer__contact">
-        <a href="" class="footer-logo"><span class="logo-part">Web</span>Studio</a>
+        <a href="" class="logo footer__contact-logo">Web<span class="footer-logo">Studio</span></a>
         <address>
             <ul class="address-list list">
             <li class="footer__item"><a href="" class="footer__add-link link">г. Киев, пр-т Леси Украинки, 26</a></li>

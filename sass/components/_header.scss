@@ -186,7 +186,7 @@ header {
     }
         @media screen and (max-width: 767.5px) {    
               line-height: 1.18;
-              font-size: var(--mobile-email);
+              font-size: 24px;
           }
         @media screen and (min-width: 768px) {  
               font-size: var(--tablet-email);
@@ -214,8 +214,8 @@ header {
             font-size: 32px;
         }
     }
-    .contact-list__email-icon,
-    .contact-list__phone-icon {
+    .contacts-list__mail-icon,
+    .contacts-list__phone-icon {
         @media screen and (max-width: 767.5px) {
             display: none;
         }
@@ -248,7 +248,7 @@ header {
     display: block;
     height: 100%;
     width: 1px;
-    background-color: red;
+    background-color: rgba(33, 33, 33, 0.2);
     margin-left: 10px;
   }
 }
