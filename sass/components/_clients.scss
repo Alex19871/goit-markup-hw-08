@@ -1,36 +1,56 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;    
+    }
     &__title {
             font-weight: 700;
-            font-size: var(--direction-title-size);
+            font-size: 28px;
             line-height: 1.17;
             text-align: center;
             color: var(--second-title-color);
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             margin-top: 0px;
+            @media screen and (min-width: 1200px) {
+                    font-size: var(--direction-title-size);
+                    margin-bottom: 50px;
+                }
     }
     &__list {
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
+            margin: -15px;
+            @media screen and (min-width: 1200px) {
+                    margin-bottom: 0;
+                }
     }
     &__link {
         display: flex;
         justify-content: center;
-        width: 170px;
+        align-items: center;
         height: 92px;
         border: 1px solid var(--social-icon-color);
         border-radius: 4px;
-        align-items: center;
         fill: var(--social-icon-color);
         transition: fill 250ms var(--animation),
             border-color 250ms var(--animation);
+    }
+    &__item {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+        @media screen and (min-width: 768px) {
+                width: calc((100% - 90px) / 3);
+            }
+            @media screen and (min-width: 1200px) {
+            width: calc((100% - 180px) / 6);
+    }
+
     }
     &__link:hover,&__link:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
     }
-    &__item+&__item {
-        margin-left: 30px;
-    }
+    
 }

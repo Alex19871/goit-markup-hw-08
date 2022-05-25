@@ -7,6 +7,17 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
+        &__contact {
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 60px;
+                @media screen and (min-width: 1200px) {
+                    align-items: flex-start;
+                    margin-right: 70px;
+                    margin-bottom: 0;
+                }
+        }
         &__item {
                 margin-bottom: 9px;
         }
@@ -14,8 +25,22 @@
             margin-bottom: 0px;
         }
         & .container {
-            display: flex;
-            align-items: baseline;
+            text-align: center;
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 76px;
+                padding-right: 89px;
+                justify-content: space-between;
+                align-items: baseline;
+                }
+            
+            @media screen and (min-width: 1200px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                }
+            // display: flex;
+            // align-items: baseline;
         }
         &__link {
             font-style: normal;
@@ -40,32 +65,41 @@
             }
         }
     }
+    .address-list {
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+    }
     .follow {
-    display: block;
-    margin-left: 70px;
+    margin-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
     &__title {
-        font-family: 'Roboto';
+        display: block;
         font-style: normal;
         font-size: var(--main-text-size);
-        letter-spacing: 0.03em;
         font-weight: 700;
-        line-height: 16px;
+        line-height: 1.14;
         color: var(--main-title-color);
         text-transform: uppercase;
         margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
     }
     &__list {
         display: flex;
         justify-content: center;
     }
     &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 44px;
         height: 44px;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         fill: var(--main-title-color);
         transition: background-color 250ms var(--animation);
         &:hover,&:focus {
