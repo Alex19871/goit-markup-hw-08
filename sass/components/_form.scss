@@ -1,11 +1,18 @@
 .modal-header {
+    width: 370px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: var(--modal-top-text);
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     color: var(--header-color);
-
+    @media screen and (max-width: 479px) {
+            width: 100%;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 100%;
+            line-height: 1.15;
+        }
 }
 
 .form-label {
@@ -79,12 +86,10 @@
     justify-content: center;
     margin-bottom: 30px;
     &-input {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
+        appearance: none;
     }
     &-icon {
-        margin-right: 8.4px;
+        margin-right: 8px;
         display: inline-block;
         width: 16px;
         height: 15px;

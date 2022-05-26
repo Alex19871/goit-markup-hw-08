@@ -893,6 +893,7 @@ header .container {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
+  flex-grow: 1;
 }
 
 .examples-list {
@@ -925,7 +926,7 @@ header .container {
 .examples-list__icon {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  height: 100%;
   text-decoration: none;
   transition: box-shadow 250ms var(--animation);
 }
@@ -978,14 +979,21 @@ header .container {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 609px;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 1250ms var(--animation);
   background-color: var(--main-title-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1015,12 +1023,24 @@ header .container {
 }
 
 .modal-header {
+  width: 370px;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: var(--modal-top-text);
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: var(--header-color);
+}
+@media screen and (max-width: 479px) {
+  .modal-header {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-header {
+    width: 100%;
+    line-height: 1.15;
+  }
 }
 
 .form-label {
@@ -1099,12 +1119,10 @@ header .container {
   margin-bottom: 30px;
 }
 .checkbox-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 .checkbox-icon {
-  margin-right: 8.4px;
+  margin-right: 8px;
   display: inline-block;
   width: 16px;
   height: 15px;

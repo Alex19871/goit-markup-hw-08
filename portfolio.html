@@ -17,7 +17,7 @@
 <body>
 <header class="header">
     <div class="container header__container">
-        <a href="" class="logo">Web<span class="logo-part">Studio</span></a>
+        <a href="index.html" class="logo">Web<span class="logo-part">Studio</span></a>
         <button class="header-button" data-nav-open>
             <svg class="header-button__icon" width="24" height="16">
                 <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
@@ -77,30 +77,77 @@
         <section class="samples">
             <div class="container">
         <h1 hidden>Работы</h1>
-        <!-- <ul class="services__list list">
+        <ul class="services__list list">
             <li><button type="button" class="services__item-btn">Все</button></li>
             <li><button type="button" class="services__item-btn">Веб-сайты</button></li>
             <li><button type="button" class="services__item-btn">Приложения</button></li>
             <li><button type="button" class="services__item-btn">Дизайн</button></li>
             <li><button type="button" class="services__item-btn">Маркетинг</button></li>
-        </ul> -->
+        </ul>
         <ul class="examples-list list">
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img19.jpg" alt="технокряк">
+                    <div class="card-over">
+                        <picture>
+                          <source
+                          srcset="./images/card/techno-desk.jpg 1x,
+                          ./images/card/techno-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/techno-tab.jpg 1x,
+                          ./images/card/techno-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/techno-mob.jpg 1x,
+                        ./images/card/techno-mob@2x.jpg 2x
+                      "
+                      alt="Технокряк"
+                      class="img"
+                      src="./images/card/techno-desk@2.jpg"
+                    />
+                  </picture>
                     <p class="card-over__text is-hidden-text">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.
                     </p>
                 </div>
-<div class="about-examles">
+            <div class="about-examles">
                 <h2 class="about-examles__title">Технокряк</h2>
                 <p class="about-examles__text">Веб-сайт</p>
             </div></a>
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img11.jpg" alt="Постер">
+                    <div class="card-over">
+                        <picture>
+                    <source
+                      srcset="
+                        ./images/card/poster-desk.jpg    1x,
+                        ./images/card/poster-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/card/poster-tab.jpg    1x,
+                        ./images/card/poster-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <img
+                      srcset="
+                        ./images/card/poster-mob.jpg    1x,
+                        ./images/card/poster-mob@2x.jpg 2x
+                      "
+                      alt="Постер"
+                      class="img"
+                      src="./images/card/poster-desk@2x.jpg"
+                    />
+                  </picture>
+                        <!-- <img src="./images/img11.jpg" alt="Постер"> -->
                     <p class="card-over__text is-hidden-text">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.
@@ -113,7 +160,28 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img12.jpg" alt="Ресторан">
+                    <div class="card-over">
+                        <picture>
+                          <source
+                          srcset="./images/card/seafood-desk.jpg 1x,
+                          ./images/card/seafood-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/seafood-tab.jpg 1x,
+                          ./images/card/seafood-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/seafood-mob.jpg 1x,
+                        ./images/card/seafood-mob@2x.jpg 2x
+                      "
+                      alt="Ресторан"
+                      class="img"
+                      src="./images/card/seafood-desk@2.jpg"
+                    />
+                  </picture>
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -127,7 +195,29 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img13.jpg" alt="Проект Prime">
+                    <div class="card-over">
+                        <picture>
+                          <source
+                          srcset="./images/card/prime-desk.jpg 1x,
+                          ./images/card/prime-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/prime-tab.jpg 1x,
+                          ./images/card/prime-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/prime-mob.jpg 1x,
+                        ./images/card/prime-mob@2x.jpg 2x
+                      "
+                      alt="Проект Prime"
+                      class="img"
+                      src="./images/card/prime-desk@2.jpg"
+                    />
+                  </picture>
+                        
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -141,7 +231,29 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img14.jpg" alt="Проект Boxes">
+                    <div class="card-over">
+                        <picture>
+                          <source
+                          srcset="./images/card/boxes-desk.jpg 1x,
+                          ./images/card/boxes-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/boxes-tab.jpg 1x,
+                          ./images/card/boxes-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/boxes-mob.jpg 1x,
+                        ./images/card/boxes-mob@2x.jpg 2x
+                      "
+                      alt="Проект Boxes"
+                      class="img"
+                      src="./images/card/boxes-desk@2.jpg"
+                    />
+                  </picture>
+                        
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -155,7 +267,29 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img15.jpg" alt="Inspiration has no Borders">
+                    <div class="card-over">
+                        <picture>
+                          <source
+                          srcset="./images/card/desktop-desk.jpg 1x,
+                          ./images/card/desktop-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/desktop-tab.jpg 1x,
+                          ./images/card/desktop-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/desktop-mob.jpg 1x,
+                        ./images/card/desktop-mob@2x.jpg 2x
+                      "
+                      alt="Inspiration has no Borders"
+                      class="img"
+                      src="./images/card/desktop-desk@2.jpg"
+                    />
+                  </picture>
+                        
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -169,7 +303,28 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img16.jpg" alt="Издание Limited Edition">
+                    <div class="card-over">
+                            <picture>
+                          <source
+                          srcset="./images/card/limited-desk.jpg 1x,
+                          ./images/card/limited-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/limited-tab.jpg 1x,
+                          ./images/card/limited-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/limited-mob.jpg 1x,
+                        ./images/card/limited-mob@2x.jpg 2x
+                      "
+                      alt="Издание Limited Edition"
+                      class="img"
+                      src="./images/card/limited-desk@2.jpg"
+                    />
+                  </picture>
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -183,7 +338,28 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img17.jpg" alt="Проект LAB">
+                    <div class="card-over">
+                             <picture>
+                          <source
+                          srcset="./images/card/lab-desk.jpg 1x,
+                          ./images/card/lab-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/lab-tab.jpg 1x,
+                          ./images/card/lab-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/lab-mob.jpg 1x,
+                        ./images/card/lab-mob@2x.jpg 2x
+                      "
+                      alt="Проект LAB"
+                      class="img"
+                      src="./images/card/lab-desk@2.jpg"
+                    />
+                  </picture>
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -197,7 +373,28 @@
             </li>
             <li class="examples-list__item">
                 <a href="" class="examples-list__icon link">
-                    <div class="card-over"><img src="./images/img18.jpg" alt="Growing Business">
+                    <div class="card-over">
+                             <picture>
+                          <source
+                          srcset="./images/card/growing-desk.jpg 1x,
+                          ./images/card/growing-desk@2.jpg 2x"
+                          media="(min-width: 1200px)"
+                          >
+                          <source
+                          srcset="./images/card/growing-tab.jpg 1x,
+                          ./images/card/growing-tab@2.jpg 2x"
+                          media="(min-width: 768px)"
+                          >
+                    <img
+                      srcset="
+                        ./images/card/growing-mob.jpg 1x,
+                        ./images/card/growing-mob@2x.jpg 2x
+                      "
+                      alt="Growing Business"
+                      class="img"
+                      src="./images/card/growing-desk@2.jpg"
+                    />
+                  </picture>
                         <p class="card-over__text is-hidden-text">
                             Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
                             получить
@@ -217,7 +414,7 @@
 
     <div class="container">
         <div class="footer__contact">
-            <a href="" class="logo footer__contact-logo">Web<span class="footer-logo">Studio</span></a>
+            <a href="index.html" class="logo footer__contact-logo">Web<span class="footer-logo">Studio</span></a>
             <address>
                 <ul class="address-list list">
                     <li class="footer__item"><a href="" class="footer__add-link link">г. Киев, пр-т Леси Украинки,
