@@ -839,17 +839,21 @@ header .container {
 }
 
 .services__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 34px;
+  margin-right: -8px;
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .services__list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .services__list > li {
+  display: inline-block;
   margin-right: 8px;
-}
-
-.services__list > li:last-child {
-  margin-right: 0px;
+  margin-top: 15px;
 }
 
 .services__item-btn {

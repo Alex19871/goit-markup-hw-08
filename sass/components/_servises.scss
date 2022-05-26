@@ -4,18 +4,25 @@
 }
 
 .services__list {
-    display: flex;
+    margin-right: -8px;
+    margin-top: -15px;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px)
+    {display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    }
 }
 
 .services__list>li {
+    
+    display: inline-block;
     margin-right: 8px;
+    margin-top: 15px;
 }
 
-.services__list>li:last-child {
-    margin-right: 0px;
-}
+// .services__list>li:last-child {
+//     margin-right: 0px;
+// }
 
 .services__item-btn {
 
