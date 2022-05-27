@@ -455,8 +455,10 @@ header .container {
 }
 
 .feature__icon {
-  display: block;
-  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #F5F4FA;
