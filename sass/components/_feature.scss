@@ -27,16 +27,23 @@
             width: calc(100%/4 - 30px);
             margin-bottom: 0;
         }
-    &::before {
-            content: '';
-            display: block;
-            // width: 270px;
-            height: 120px;
-            margin-bottom: 30px;
-            background-color: #F5F4FA;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+    // &::before {
+    //         content: '';
+    //         display: block;
+    //         // width: 270px;
+    //         height: 120px;
+    //         margin-bottom: 30px;
+    //         background-color: #F5F4FA;
+    //         background-repeat: no-repeat;
+    //         background-position: center;
+    //     }
+}
+.feature__icon {
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
 }
 .feature__title {
     font-weight: 700;
@@ -52,21 +59,21 @@
     }
 }
 
-.feature__antenna::before {
-    background-image: url('../images/features/antenna.svg');
-}
+// .feature__antenna::before {
+//     background-image: url('../images/features/antenna.svg');
+// }
 
-.feature__clock::before {
-    background-image: url('../images/features/clock.svg');
-}
+// .feature__clock::before {
+//     background-image: url('../images/features/clock.svg');
+// }
 
-.feature__vector::before {
-    background-image: url('../images/features/diagram.svg');
-}
+// .feature__vector::before {
+//     background-image: url('../images/features/diagram.svg');
+// }
 
-.feature__austronaut::before {
-    background-image: url('../images/features/astronaut.svg');
-}
+// .feature__austronaut::before {
+//     background-image: url('../images/features/astronaut.svg');
+// }
 
 .feature__item:last-child {
     margin-right: 0px;
